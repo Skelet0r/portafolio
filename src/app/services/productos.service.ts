@@ -1,12 +1,25 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/htto';
+import { Http } from '@angular/http';
 
 @Injectable()
-export class ProductosService {
+export class ProductosService
+{
 
-  constructor(private http: Htpp)
-  {
+    productos: any[] = [];
+    cargando = true;
 
-  }
+    constructor(private http: Http)
+    {
 
+        this.cargar_productos();
+    }
+
+    public cargar_productos()
+    {
+        this.cargando = true;
+        this.http.get('https://paginaweb-22f7b.firebaseio.com/productos_idx.json').subscribe(res => {
+            console.log(res.json());
+            this.cargando = false;
+        });
+    }
 }
