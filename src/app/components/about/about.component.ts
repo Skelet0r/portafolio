@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
+import { InformacionService } from "../../services/informacion.service";
 
-@Component({
+@Component
+({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styles: []
 })
-export class AboutComponent {
+
+export class AboutComponent
+{
+
+  constructor(public _is:InformacionService)
+  {
+
+  }
 }

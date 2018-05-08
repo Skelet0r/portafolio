@@ -33,7 +33,7 @@ export class InformacionService
 
         this.cargada_sobre_nosotros = true;
         this.equipo = data.json();
-        console.log(data.json());
+        //console.log(data.json());
       });
   }
 
