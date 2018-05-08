@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { ProductosService } from "../../services/productos.service";
 
-@Component({
-  selector: 'app-portafolio',
-  templateUrl: './portafolio.component.html',
-  styles: []
+@Component
+({
+    selector: 'app-portafolio',
+    templateUrl: './portafolio.component.html',
+    styles: []
 })
-export class PortafolioComponent {
 
+export class PortafolioComponent
+{
+    constructor(private _ps: ProductosService)
+    {
+
+    }
 }
