@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortafolioitemComponent } from './components/portafolioitem/portafolioitem.component';
+import { SearchComponent } from './components/search/search.component';
 
 //TSLint
 
@@ -27,7 +28,8 @@ import { PortafolioitemComponent } from './components/portafolioitem/portafolioi
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    PortafolioitemComponent
+    PortafolioitemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
