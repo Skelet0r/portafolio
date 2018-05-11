@@ -25,7 +25,7 @@ export class PortafolioitemComponent
             {
                 this.cod = parametros['id'];
                 this.producto = res.json();
-                console.log(res.json());
+                //console.log(res.json());
             })
         })
     }

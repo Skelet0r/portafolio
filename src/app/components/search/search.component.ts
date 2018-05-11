@@ -12,7 +12,7 @@ export class SearchComponent
 
     termino: String = undefined;
 
-    constructor( private route: ActivatedRoute, private _ps: ProductosService)
+    constructor( public route: ActivatedRoute, public _ps: ProductosService)
     {
         route.params.subscribe(parametros=>
         {
