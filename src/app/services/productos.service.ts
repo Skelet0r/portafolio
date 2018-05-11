@@ -43,9 +43,7 @@ export class ProductosService
             if (prod.categoria.indexOf(termino) >= 0 || prod.titulo.toLowerCase().indexOf(termino) >= 0)
             {
                 this.productos_filtrados.push(prod);
-                //console.log(prod);
             }
-            //console.log(prod);
         })
     }
 
@@ -63,8 +61,6 @@ export class ProductosService
         {
             this.http.get('https://paginaweb-22f7b.firebaseio.com/productos_idx.json').subscribe(res =>
             {
-                //console.log(res.json());
-
                 setTimeout(() =>
                 {
                     this.cargando = false;

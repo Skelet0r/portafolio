@@ -17,7 +17,6 @@ export class HeaderComponent
 
     buscar_producto(termino: String)
     {
-        //console.log(termino)
         this.router.navigate(['buscar', termino]);
     }
 }

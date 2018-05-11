@@ -7,6 +7,7 @@ import {ProductosService} from '../../services/productos.service';
     selector: 'app-search',
     templateUrl: './search.component.html'
 })
+
 export class SearchComponent
 {
 
@@ -17,7 +18,6 @@ export class SearchComponent
         route.params.subscribe(parametros=>
         {
             this.termino = parametros['termino'];
-            console.log(this.termino);
 
             _ps.buscar_producto(this.termino);
         });
